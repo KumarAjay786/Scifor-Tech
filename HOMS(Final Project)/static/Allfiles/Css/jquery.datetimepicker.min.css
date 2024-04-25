@@ -1,0 +1,277 @@
+.xdsoft_datetimepicker {
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.506);
+    background: #fff;
+    border-bottom: 1px solid #bbb;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px;
+    padding-left: 0;
+    padding-top: 2px;
+    position: absolute;
+    z-index: 9999;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+}
+
+.xdsoft_datetimepicker.xdsoft_rtl {
+    padding: 8px 0 8px 8px;
+}
+
+.xdsoft_datetimepicker iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 210px;
+    background: transparent;
+    border: 0;
+}
+
+.xdsoft_datetimepicker button {
+    border: none !important;
+}
+
+.xdsoft_noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.xdsoft_noselect::selection {
+    background: transparent;
+}
+
+.xdsoft_noselect::-moz-selection {
+    background: transparent;
+}
+
+.xdsoft_datetimepicker.xdsoft_inline {
+    display: inline-block;
+    position: static;
+    box-shadow: none;
+}
+
+.xdsoft_datetimepicker * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker,
+.xdsoft_datetimepicker .xdsoft_timepicker {
+    display: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker.active,
+.xdsoft_datetimepicker .xdsoft_timepicker.active {
+    display: block;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker {
+    width: 224px;
+    float: left;
+    margin-left: 8px;
+}
+
+.xdsoft_datetimepicker.xdsoft_rtl .xdsoft_datepicker {
+    float: right;
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_datepicker {
+    width: 256px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker {
+    width: 58px;
+    float: left;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 0;
+}
+
+.xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker {
+    float: right;
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.xdsoft_datetimepicker .xdsoft_monthpicker {
+    position: relative;
+    text-align: center;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i,
+.xdsoft_datetimepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_next,
+.xdsoft_datetimepicker .xdsoft_today_button {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlCQzNGN0U4MTI0RjExRTM4MzY3OTE3NDYxODAyMUVFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlCQzNGN0U5MTI0RjExRTM4MzY3OTE3NDYxODAyMUVFIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTFCM0Y3RjcxMjRGMTFFMzgzNjc5MTc0NjE4MDIxRUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTFCM0Y3RjgxMjRGMTFFMzgzNjc5MTc0NjE4MDIxRUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6bxtUAAAAVklEQVR42mJgYGBgYPjPwMDw9G7AiMGJiYnIEeYAZlZWWQggAAKlwB8iQvGh8AAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 5px;
+    color: #000;
+    font-size: 18px;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i.xdsoft_prev {
+    left: 5px;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i.xdsoft_next {
+    right: 5px;
+}
+
+.xdsoft_datetimepicker .xdsoft_label i.xdsoft_today_button {
+    width: 100%;
+    left: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_label {
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding: 0 25px;
+}
+
+.xdsoft_datetimepicker .xdsoft_label span {
+    font-weight: normal;
+}
+
+.xdsoft_datetimepicker .xdsoft_time_box {
+    float: left;
+    width: 100%;
+}
+
+.xdsoft_datetimepicker .xdsoft_time_box > div {
+    float: left;
+    width: 25%;
+    padding: 0 0 0 4px;
+}
+
+.xdsoft_datetimepicker .xdsoft_time_box > div:nth-child(2),
+.xdsoft_datetimepicker .xdsoft_time_box > div:nth-child(3) {
+    padding-left: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_weekend {
+    color: #d70000;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_disabled,
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_disabled.xdsoft_other_month {
+    color: #999;
+    cursor: default;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_disabled.xdsoft_current {
+    color: #000;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_current {
+    background-color: #f0f0f0;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_today {
+    background-color: #f0f0f0;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_other_month {
+    color: #ccc;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_weekend {
+    color: #d70000;
+}
+
+.xdsoft_datetimepicker .xdsoft_time_box {
+    padding: 0;
+}
+
+.xdsoft_datetimepicker .xdsoft_time_box > div {
+    padding: 0;
+    width: 50%;
+}
+
+.xdsoft_datetimepicker .xdsoft_date.xdsoft_today.xdsoft_disabled {
+    background-color: transparent;
+}
+
+.xdsoft_datetimepicker .xdsoft_datetime .xdsoft_time {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next:hover {
+    background-color: #f0f0f0;
+}
+
+.xdsoft_datetimepicker .xdsoft_prev,
+.xdsoft_datetimepicker .xdsoft_next {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.xdsoft_datetimepicker .xdsoft_prev.xdsoft_disabled,
+.xdsoft_datetimepicker .xdsoft_next.xdsoft_disabled {
+    cursor: default;
+    opacity: 0.3;
+}
+
+.xdsoft_datetimepicker .xdsoft_datetime {
+    overflow: hidden;
+    clear: both;
+}
+
+.xdsoft_datetimepicker .xdsoft_date,
+.xdsoft_datetimepicker .xdsoft_time {
+    float: left;
+}
+
+.xdsoft_datetimepicker .xdsoft_monthpicker {
+    width: 224px;
+    margin: 0 auto;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker,
+.xdsoft_datetimepicker .xdsoft_timepicker.active + .xdsoft_datepicker {
+    clear: both;
+}

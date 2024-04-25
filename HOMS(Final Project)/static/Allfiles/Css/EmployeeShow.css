@@ -1,0 +1,95 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f50000; /* Red */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+/* Sidebar styles */
+.left_col {
+    background-color: #f50000; /* Red */
+    color: #fff;
+    padding: 0;
+}
+
+.profile_pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.side-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.side-menu li ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li ul li a {
+    color: #ccc;
+    padding-left: 20px;
+}
+
+/* Content styles */
+.right_col {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.per-head {
+    background-color: #f50000; /* Red */
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.personal-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.personal-info h5 {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.sidebar-footer {
+    background-color: #f50000; /* Red */
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-footer a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.sidebar-footer a:hover {
+    color: #ccc;
+}
